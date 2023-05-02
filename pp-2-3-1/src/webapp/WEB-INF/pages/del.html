@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+<form th:action="@{/}" th:method="DELETE  " th:object="${userDel}">
+  <label for="id">Enter id: </label>
+ <!-- <input type="hidden" name="_method" value="PATCH">-->
+  <input type="text" th:field="*{id}" id="id"/>
+  <br>
+  <br>
+  <input type="submit" value="Delete">
+</form>
+<br>
+<a href="/spring_mvc_war_exploded/">Back</a>
+</body>
+</html>
